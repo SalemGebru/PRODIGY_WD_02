@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: black;
+    background: linear-gradient(120deg, #3f41b4, #acb6e5);
+    color:white;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.stpwatch{
+    
+    width:100%;
+    text-align: center;
+    color:white;
+    padding-top:200px;
+    font-size: 6em;
+}
+.btns{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.btns button{
+  border-radius: 25%;
+   margin-left: 30px;
+   padding: 1%;
+   font-size: 18px;
+   font-weight: bold;
+   border: none;
+   color: #3f030c;
+   background-color:white;
+    
+}
+.btns button:hover{
+    background-color: #ff4f4f;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+.lapsedTimes{
+    display: block;
+    background-color: antiquewhite;
+    color:black;
+   margin: 100px auto;
+    width:25%;
+   
+}
