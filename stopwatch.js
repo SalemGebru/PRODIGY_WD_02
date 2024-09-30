@@ -4,7 +4,6 @@ let sec=0;
 let paused=true;
 let timer;
 
-
 let timeDisplay=document.getElementById('stopwatch');
 let startWatch=document.getElementById('start');
 let pauseWatch=document.getElementById('pause');
@@ -27,33 +26,24 @@ function initialState(){
    
 }
 
-
 function stopwatch(){
-  
     sec++;
      if(sec==60){
         min++;
         sec=0;
-      
      }
      if(min==60){
         hr++;
         min=0;
      }
-    
     displayTime();
-   
-   timer=setTimeout(stopwatch,1000);
-
-   
-   
-   
-     
+   timer=setTimeout(stopwatch,1000); 
 }
 
 function pause(){
    clearInterval(timer);
 }
+
 function displayTime(){
     let frmHour=hr.toString().padStart(2,'0');
     let frmMin=min.toString().padStart(2,'0');
@@ -64,7 +54,6 @@ function displayTime(){
 
 function Lapse(){
    let lapses=document.createElement('div');
-
    clearInterval(timer);
    let frmHour=hr.toString().padStart(2,'0');
     let frmMin=min.toString().padStart(2,'0');
@@ -74,4 +63,5 @@ function Lapse(){
    lapseRec.appendChild(lapses);
    stopwatch();
 }
+
 initialState();
